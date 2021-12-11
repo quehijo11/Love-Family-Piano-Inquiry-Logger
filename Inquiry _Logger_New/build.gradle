@@ -1,0 +1,52 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'SheetQuickstart'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.auth:google-auth-library-credentials:1.2.2'
+    implementation 'com.google.oauth-client:google-oauth-client-bom:1.32.1'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:1.2.2'
+    implementation 'com.google.oauth-client:google-oauth-client:1.32.1'
+    implementation 'com.google.api-client:google-api-client-gson:1.32.2'
+    implementation 'hu.blackbelt.bundles.google-api-client:com.google.api-services-oauth2:1.23.0_1'
+    implementation 'com.google.api-client:google-api-client-bom:1.32.2'
+    implementation 'com.google.api-client:google-api-client-parent:1.32.2'
+    implementation 'com.google.api-client:google-api-client-assembly:1.32.2'
+    implementation 'com.google.api-client:google-api-client-jackson2:1.32.2'
+    implementation 'com.google.api-client:google-api-client-protobuf:1.32.2'
+    implementation 'com.google.api-client:google-api-client-android:1.32.2'
+    implementation 'hu.blackbelt.bundles.google-api-client:com.google.api-client:1.23.0_2'
+    implementation 'org.everit.credential:org.everit.credential.encryptor.api:1.0.0'
+    implementation 'com.google.api-client:google-api-client-appengine:1.32.2'
+    implementation 'com.google.api-client:google-api-client-servlet:1.32.2'
+    implementation 'com.google.api-client:google-api-client-xml:1.32.2'
+    implementation 'com.google.api-client:google-api-client-java6:1.32.2'
+    implementation 'com.google.oauth-client:google-oauth-client-java6:1.32.1'
+    implementation 'com.google.oauth-client:google-oauth-client-appengine:1.32.1'
+    implementation 'com.google.oauth-client:google-oauth-client-servlet:1.32.1'
+    implementation 'com.google.oauth-client:google-oauth-client-parent:1.32.1'
+    implementation 'com.google.oauth-client:google-oauth-client-assembly:1.32.1'
+    implementation 'com.google.apis:google-api-services-sheets:v4-rev20210629-1.32.1'
+    implementation 'org.webjars.bowergithub.googlewebcomponents:google-sheets:1.0.6'
+    implementation 'org.jbpm.contrib:google-sheets-workitem:7.59.0.Final'
+    implementation 'org.apache.camel:camel-google-sheets:3.12.0'
+    implementation 'com.paf.maven:google-sheets-import-plugin:1.1.0'
+    implementation 'org.webjars.npm:construct-style-sheets-polyfill:2.4.16'
+    implementation 'org.webjars.npm:sheetjs:2.0.0'
+    implementation 'com.google.guava:guava:31.0.1-jre'
+    implementation 'com.google.api-client:google-api-client:1.32.2'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.32.1'
+    implementation 'com.google.apis:google-api-services-drive:v3-rev20211107-1.32.1'
+}
+
+test {
+    useJUnitPlatform()
+}
